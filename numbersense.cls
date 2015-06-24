@@ -14,6 +14,8 @@
 \setlength\parindent{0cm}
 \setlength\columnsep{25pt}
 
+\pagestyle{empty}
+
 \newcommand*{\shifttext}[2]{%
   \settowidth{\@tempdima}{#2}%
   \makebox[\@tempdima]{\hspace*{-#1}#2}%
