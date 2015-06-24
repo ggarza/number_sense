@@ -38,6 +38,8 @@
 \end{document}}
 
 \newcommand{\question}{\item}
+\newcommand{\aquestion}{\stepcounter{enumi}%
+  \item[\shifttext{10pt}{*(\arabic{enumi})}]}
 
 
 \newcommand{\instructions}{%
