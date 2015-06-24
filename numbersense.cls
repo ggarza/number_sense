@@ -39,6 +39,7 @@
   \NumSense@Instructions
   \begin{multicols}{2}
     \begin{enumerate}[(1)]
+ \setstretch{1.5}
 }{
 \end{enumerate}
 \end{multicols}
