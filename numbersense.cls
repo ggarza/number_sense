@@ -9,7 +9,7 @@
 \RequirePackage{paralist}
 \RequirePackage{setspace}
 
-\RequirePackage[top=1.0in,bottom=0.8in,left=0.75in,right=0.75in]{geometry}
+\RequirePackage[top=0.6in,bottom=0.8in,left=0.75in,right=0.75in]{geometry}
 
 \setlength\parindent{0cm}
 \setlength\columnsep{25pt}
