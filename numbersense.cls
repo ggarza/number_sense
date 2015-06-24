@@ -1,6 +1,6 @@
 \ProvidesClass{numbersense}
 
-\LoadClass{article}
+\LoadClass[11pt]{article}
 
 
 \RequirePackage[utf8]{inputenc}
