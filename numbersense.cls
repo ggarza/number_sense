@@ -23,13 +23,18 @@
 
 \newcommand{\Title}[1]{\gdef\NumSense@Title{#1}}
 \newcommand{\Subtitle}[1]{\gdef\NumSense@Subtitle{#1}}
+\newcommand{\Instructions}[1]{\gdef\NumSense@Instructions{#1}}
 
 \Title{Number Sense Test}
 \Subtitle{}
 
 
 \newenvironment{questions}[0]{\begin{document}
-  \instructions
+\begin{center} \large
+  \NumSense@Title \\
+  \NumSense@Subtitle
+\end{center}
+  \NumSense@Instructions
   \begin{multicols}{2}
     \begin{enumerate}[(1)]
 }{
@@ -42,13 +47,9 @@
   \item[\shifttext{10pt}{*(\arabic{enumi})}]}
 
 
-\newcommand{\instructions}{%
+\Instructions{%
   \fontseries{b}\selectfont
 
-\begin{center} \large
-  \NumSense@Title \\
-  \NumSense@Subtitle
-\end{center}
 
 Read directions carefully before beginnning test.
 \vspace{2mm}
