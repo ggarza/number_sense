@@ -36,6 +36,7 @@
   \NumSense@Title \\
   \NumSense@Subtitle
 \end{center}
+\small
   \NumSense@Instructions
   \begin{multicols}{2}
     \begin{enumerate}[(1)]
