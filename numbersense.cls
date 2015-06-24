@@ -20,6 +20,14 @@
 }
 
 
+
+\newcommand{\Title}[1]{\gdef\NumSense@Title{#1}}
+\newcommand{\Subtitle}[1]{\gdef\NumSense@Subtitle{#1}}
+
+\Title{Number Sense Test}
+\Subtitle{}
+
+
 \newenvironment{questions}[0]{\begin{document}
   \instructions
   \begin{multicols}{2}
@@ -36,8 +44,8 @@
   \fontseries{b}\selectfont
 
 \begin{center} \large
-  Edinburg North High School \\
-  Number Sense Test \#14
+  \NumSense@Title \\
+  \NumSense@Subtitle
 \end{center}
 
 Read directions carefully before beginnning test.
