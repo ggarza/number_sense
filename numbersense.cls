@@ -88,10 +88,9 @@
 Do not turn this page until the person conducting this test gives the signal to
 begin. This is a ten-minute test. There are 80 problems.  Solve accurately and
 quickly as many as you can in the order in which they appear. ALL PROBLEMS ARE
-TO BE SOLVED MENTALLY. Make no calculations with paper and pencil.  Write only
-the answer in the space provided at the end of each problem.  Problems marked
+TO BE SOLVED MENTALLY.\, Make no calculations with paper and pencil.  Write only the answer in the space provided at the end of each problem.  Problems marked
 with a (*) require approximate integral answers; any answer to a starred problem
-that is with five percent of the exact answer will be score correct; all other
+that is within five percent of the exact answer will be scored correct; all other
 problems require exact answers.
 \vspace{2mm}
 
