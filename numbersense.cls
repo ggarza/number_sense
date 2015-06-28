@@ -57,7 +57,7 @@
   \item[\shifttext{10pt}{*(\arabic{enumi})}]}
 
 
-\Instructions{%
+\instructions{%
   \begin{textblock}{3.75}(4,0.95)
     \begin{flushright} \footnotesize
       \setstretch{1.5}
