@@ -40,17 +40,11 @@
 \subtitle{}
 \columns{2}
 
-\newenvironment{questions}[0]{
-\begin{center} \large
-  \NumSense@Title \\
-  \NumSense@Subtitle
-\end{center}
-\small
-  \NumSense@Instructions
+\newenvironment{questions}[0]{%
   \begin{multicols}{\NumSense@Columns}
     \begin{enumerate}[(1)]
  \setstretch{1.5}
-}{
+}{%
 \end{enumerate}
 \end{multicols}
 }
@@ -104,4 +98,13 @@ problems require exact answers.
   \textbf{STOP -- WAIT FOR SIGNAL!}
 \end{center}
 \vspace{1mm}
+}
+
+
+\AtBeginDocument{
+  \begin{center}\large
+  \NumSense@Title\\
+  \NumSense@Subtitle
+\end{center}
+{\small \NumSense@Instructions}
 }
