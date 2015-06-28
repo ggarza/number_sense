@@ -56,8 +56,16 @@
 
 \Instructions{%
 
+  \begin{multicols}{3}\bfseries
+    Read directions carefully\\ before beginnning test.
+    \columnbreak
+    \begin{center}
+      DO NOT UNFOLD THIS SHEET\\ UNTIL TOLD TO BEGIN
+    \end{center}
+    \columnbreak
+    \rule{0pt}{1pt}
+  \end{multicols}
 
-Read directions carefully before beginnning test.
 \vspace{2mm}
 
 \textbf{Directions:}
