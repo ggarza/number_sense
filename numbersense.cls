@@ -8,6 +8,9 @@
 \RequirePackage{mathptmx}% http://ctan.org/pkg/mathptmx
 \RequirePackage{paralist}
 \RequirePackage{setspace}
+\RequirePackage[absolute]{textpos}
+\setlength{\TPHorizModule}{1in}%
+\setlength{\TPVertModule}{1in}%
 
 \RequirePackage[top=0.6in,bottom=0.8in,left=0.75in,right=0.75in]{geometry}
 
@@ -55,6 +58,16 @@
 
 
 \Instructions{%
+  \begin{textblock}{3.75}(4,0.95)
+    \begin{flushright} \footnotesize
+      \setstretch{1.5}
+      Final \rule{1.3cm}{0.5pt} \rule{1.3cm}{0.5pt} \\
+      2nd \rule{1.3cm}{0.5pt} \rule{1.3cm}{0.5pt} \\
+      1st  \rule{1.3cm}{0.5pt} \rule{1.3cm}{0.5pt}\\
+      \setstretch{1}
+      Score~~~~~Initials~~\\
+    \end{flushright}
+  \end{textblock}
   \begin{flushleft}\bfseries
     Contestant's Number \rule{2cm}{0.5pt}
   \end{flushleft}
