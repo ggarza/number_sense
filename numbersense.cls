@@ -37,7 +37,7 @@
 \subtitle{}
 \columns{2}
 
-\newenvironment{questions}[0]{\begin{document}
+\newenvironment{questions}[0]{
 \begin{center} \large
   \NumSense@Title \\
   \NumSense@Subtitle
@@ -50,7 +50,7 @@
 }{
 \end{enumerate}
 \end{multicols}
-\end{document}}
+}
 
 \newcommand{\question}{\item}
 \newcommand{\aquestion}{\stepcounter{enumi}%
