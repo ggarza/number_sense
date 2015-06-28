@@ -51,18 +51,17 @@
 
 
 \def\q{\@ifnextchar[{\@qwith}{\@qwithout}}
+\def\question{\@ifnextchar[{\@qwith}{\@qwithout}}
 \def\@qwith[#1]#2\par{\item #1 \par }
 \def\@qwithout#1\par{\item #1}
 
 \def\aq{\@ifnextchar[{\@aqwith}{\@aqwithout}}
+\def\aquestion{\@ifnextchar[{\@aqwith}{\@aqwithout}}
 \def\@aqwith[#1]#2\par{\stepcounter{enumi}%
   \item[\shifttext{10pt}{*(\arabic{enumi})}] #1 \par }
 \def\@aqwithout#1\par{\stepcounter{enumi}%
   \item[\shifttext{10pt}{*(\arabic{enumi})}] #1}
 
-\newcommand{\question}{\item}
-\newcommand{\aquestion}{\stepcounter{enumi}%
-  \item[\shifttext{10pt}{*(\arabic{enumi})}]}
 
 \instructions{%
   \begin{textblock}{3.75}(4,0.95)
