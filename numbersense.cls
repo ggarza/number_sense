@@ -34,11 +34,13 @@
 \newcommand{\subtitle}[1]{\gdef\NumSense@Subtitle{#1}}
 \newcommand{\instructions}[1]{\gdef\NumSense@Instructions{#1}}
 \newcommand{\columns}[1]{\gdef\NumSense@Columns{#1}}
+\newcommand{\keycolumns}[1]{\gdef\NumSense@KeyColumns{#1}}
 
 
 \title{Number Sense Test}
 \subtitle{}
 \columns{2}
+\keycolumns{4}
 
 \newenvironment{questions}[0]{%
   \begin{multicols}{\NumSense@Columns}
@@ -116,4 +118,27 @@ problems require exact answers.
   \NumSense@Subtitle
 \end{center}
 {\small \NumSense@Instructions}
+}
+
+\AtEndDocument{
+    \newpage
+
+\def\q{\@ifnextchar[{\@qwith}{\@qwithout}}
+\def\question{\@ifnextchar[{\@qwith}{\@qwithout}}
+\def\@qwith[#1]#2\par{\item #1 \par }
+\def\@qwithout#1\par{\item }
+
+\def\aq{\@ifnextchar[{\@aqwith}{\@aqwithout}}
+\def\aquestion{\@ifnextchar[{\@aqwith}{\@aqwithout}}
+\def\@aqwith[#1]#2\par{\stepcounter{enumi}%
+  \item[\hspace{-5.6pt}*(\arabic{enumi})]#1}
+\def\@aqwithout#1\par{\stepcounter{enumi}%
+  \item[\hspace{-5.6pt}*(\arabic{enumi})]}
+
+
+{\large \NumSense@Title~---~\NumSense@Subtitle\\
+Answer Key}
+\raggedcolumns
+\columns{\NumSense@KeyColumns}
+\input{\jobname.tex}
 }
