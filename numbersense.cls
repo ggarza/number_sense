@@ -26,10 +26,12 @@
 \newcommand{\Title}[1]{\gdef\NumSense@Title{#1}}
 \newcommand{\Subtitle}[1]{\gdef\NumSense@Subtitle{#1}}
 \newcommand{\Instructions}[1]{\gdef\NumSense@Instructions{#1}}
+\newcommand{\columns}[1]{\gdef\NumSense@Columns{#1}}
 
 \Title{Number Sense Test}
 \Subtitle{}
 
+\columns{2}
 
 \newenvironment{questions}[0]{\begin{document}
 \begin{center} \large
@@ -38,7 +40,7 @@
 \end{center}
 \small
   \NumSense@Instructions
-  \begin{multicols}{2}
+  \begin{multicols}{\NumSense@Columns}
     \begin{enumerate}[(1)]
  \setstretch{1.5}
 }{
