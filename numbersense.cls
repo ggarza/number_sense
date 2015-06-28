@@ -29,6 +29,8 @@
 \newcommand{\instructions}[1]{\gdef\NumSense@Instructions{#1}}
 \newcommand{\columns}[1]{\gdef\NumSense@Columns{#1}}
 \newcommand{\keycolumns}[1]{\gdef\NumSense@KeyColumns{#1}}
+\newtoggle{makeanswerkey}\togglefalse{makeanswerkey}
+\newcommand{\answerkey}[0]{\toggletrue{makeanswerkey}}
 
 
 \title{Number Sense Test}
@@ -115,24 +117,30 @@ problems require exact answers.
 }
 
 \AtEndDocument{
+  \iftoggle{makeanswerkey}{%
+    % make answer key
     \newpage
 
-\def\q{\@ifnextchar[{\@qwith}{\@qwithout}}
-\def\question{\@ifnextchar[{\@qwith}{\@qwithout}}
-\def\@qwith[#1]#2\par{\item #1 \par }
-\def\@qwithout#1\par{\item }
+    \def\q{\@ifnextchar[{\@qwith}{\@qwithout}}
+    \def\question{\@ifnextchar[{\@qwith}{\@qwithout}}
+    \def\@qwith[#1]#2\par{\item #1 \par }
+    \def\@qwithout#1\par{\item }
 
-\def\aq{\@ifnextchar[{\@aqwith}{\@aqwithout}}
-\def\aquestion{\@ifnextchar[{\@aqwith}{\@aqwithout}}
-\def\@aqwith[#1]#2\par{\stepcounter{enumi}%
-  \item[\hspace{-5.6pt}*(\arabic{enumi})]#1}
-\def\@aqwithout#1\par{\stepcounter{enumi}%
-  \item[\hspace{-5.6pt}*(\arabic{enumi})]}
+    \def\aq{\@ifnextchar[{\@aqwith}{\@aqwithout}}
+    \def\aquestion{\@ifnextchar[{\@aqwith}{\@aqwithout}}
+    \def\@aqwith[#1]#2\par{\stepcounter{enumi}%
+    \item[\hspace{-5.6pt}*(\arabic{enumi})]#1}
+    \def\@aqwithout#1\par{\stepcounter{enumi}%
+    \item[\hspace{-5.6pt}*(\arabic{enumi})]}
 
 
-{\large \NumSense@Title~---~\NumSense@Subtitle\\
-Answer Key}
-\raggedcolumns
-\columns{\NumSense@KeyColumns}
-\input{\jobname.tex}
+    {\large \NumSense@Title~---~\NumSense@Subtitle\\
+      Answer Key}
+    \raggedcolumns
+    \columns{\NumSense@KeyColumns}
+    \input{\jobname.tex}
+  }{%
+    % don't make answer key
+    \relax
+  }
 }
