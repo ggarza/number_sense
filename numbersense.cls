@@ -54,9 +54,9 @@
 \def\aq{\@ifnextchar[{\@aqwith}{\@aqwithout}}
 \def\aquestion{\@ifnextchar[{\@aqwith}{\@aqwithout}}
 \def\@aqwith[#1]#2\par{\stepcounter{enumi}%
-  \item[\hspace{-5.5pt}*(\arabic{enumi})]#2}
+  \item[\hspace{-5.6pt}*(\arabic{enumi})]#2}
 \def\@aqwithout#1\par{\stepcounter{enumi}%
-  \item[\hspace{-5.5pt}*(\arabic{enumi})]#1}
+  \item[\hspace{-5.6pt}*(\arabic{enumi})]#1}
 
 
 \instructions{%
