@@ -23,12 +23,6 @@
 \pagestyle{empty}
 
 \newcommand{\bigdot}{~\textbullet~~}
-\newcommand*{\shifttext}[2]{%
-  \settowidth{\@tempdima}{#2}%
-  \makebox[\@tempdima]{\hspace*{-#1}#2}%
-}
-
-
 
 \renewcommand{\title}[1]{\gdef\NumSense@Title{#1}}
 \newcommand{\subtitle}[1]{\gdef\NumSense@Subtitle{#1}}
