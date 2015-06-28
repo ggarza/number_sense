@@ -16,6 +16,7 @@
 
 \pagestyle{empty}
 
+\newcommand{\bigdot}{~\textbullet~~}
 \newcommand*{\shifttext}[2]{%
   \settowidth{\@tempdima}{#2}%
   \makebox[\@tempdima]{\hspace*{-#1}#2}%
