@@ -49,10 +49,15 @@
 \end{multicols}
 }
 
+
+\def\q{\@ifnextchar[{\@qwith}{\@qwithout}}
+\def\@qwith[#1]#2\par{\item #1 \par }
+\def\@qwithout#1\par{\item #1}
+
+
 \newcommand{\question}{\item}
 \newcommand{\aquestion}{\stepcounter{enumi}%
   \item[\shifttext{10pt}{*(\arabic{enumi})}]}
-
 
 \instructions{%
   \begin{textblock}{3.75}(4,0.95)
