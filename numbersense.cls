@@ -52,13 +52,12 @@
 
 
 \Instructions{%
-  \fontseries{b}\selectfont
 
 
 Read directions carefully before beginnning test.
 \vspace{2mm}
 
-Directions: \fontseries{m}\selectfont
+\textbf{Directions:}
 Do not turn this page until the person conducting this test gives the signal to
 begin. This is a ten-minute test. There are 80 problems.  Solve accurately and
 quickly as many as you can in the order in which they appear. ALL PROBLEMS ARE
@@ -75,5 +74,4 @@ problems require exact answers.
 \begin{center}
   \textbf{STOP -- WAIT FOR SIGNAL!}
 \end{center}
-%\fontseries{b}\selectfont
 }
