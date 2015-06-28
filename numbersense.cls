@@ -52,7 +52,7 @@
 
 \def\q{\@ifnextchar[{\@qwith}{\@qwithout}}
 \def\question{\@ifnextchar[{\@qwith}{\@qwithout}}
-\def\@qwith[#1]#2\par{\item #1 \par }
+\def\@qwith[#1]#2\par{\item #2 \par }
 \def\@qwithout#1\par{\item #1}
 
 \def\aq{\@ifnextchar[{\@aqwith}{\@aqwithout}}
