@@ -24,14 +24,14 @@
 
 
 
-\newcommand{\Title}[1]{\gdef\NumSense@Title{#1}}
-\newcommand{\Subtitle}[1]{\gdef\NumSense@Subtitle{#1}}
-\newcommand{\Instructions}[1]{\gdef\NumSense@Instructions{#1}}
+\renewcommand{\title}[1]{\gdef\NumSense@Title{#1}}
+\newcommand{\subtitle}[1]{\gdef\NumSense@Subtitle{#1}}
+\newcommand{\instructions}[1]{\gdef\NumSense@Instructions{#1}}
 \newcommand{\columns}[1]{\gdef\NumSense@Columns{#1}}
 
-\Title{Number Sense Test}
-\Subtitle{}
 
+\title{Number Sense Test}
+\subtitle{}
 \columns{2}
 
 \newenvironment{questions}[0]{\begin{document}
