@@ -107,7 +107,7 @@ problems require exact answers.
 
 
 \AtBeginDocument{
-  \begin{center}\large
+  \begin{center}\large\bfseries
   \NumSense@Title\\
   \NumSense@Subtitle
 \end{center}
