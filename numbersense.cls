@@ -65,7 +65,7 @@
       2nd \rule{1.3cm}{0.5pt} \rule{1.3cm}{0.5pt} \\
       1st  \rule{1.3cm}{0.5pt} \rule{1.3cm}{0.5pt}\\
       \setstretch{1}
-      Score~~~~~Initials~~\\
+      Score~~~~~~~~Initials~~~~~~\\
     \end{flushright}
   \end{textblock}
   \begin{flushleft}\bfseries
