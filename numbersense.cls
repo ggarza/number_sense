@@ -31,6 +31,7 @@
 \newcommand{\keycolumns}[1]{\gdef\NumSense@KeyColumns{#1}}
 \newtoggle{makeanswerkey}\togglefalse{makeanswerkey}
 \newcommand{\answerkey}[0]{\toggletrue{makeanswerkey}}
+\newcommand{\problemspacing}[1]{\gdef\NumSense@ProblemSpacing{#1}}
 
 
 \title{Number Sense Test}
@@ -38,10 +39,12 @@
 \columns{2}
 \keycolumns{4}
 
+\problemspacing{1.5}
+
 \newenvironment{questions}[0]{%
   \begin{multicols}{\NumSense@Columns}
     \begin{enumerate}[(1)]
- \setstretch{1.5}
+ \setstretch{\NumSense@ProblemSpacing}
 }{%
 \end{enumerate}
 \end{multicols}
