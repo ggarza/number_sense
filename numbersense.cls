@@ -55,6 +55,9 @@
 
 
 \Instructions{%
+  \begin{flushleft}\bfseries
+    Contestant's Number \rule{2cm}{0.5pt}
+  \end{flushleft}
 
   \begin{multicols}{3}\bfseries
     Read directions carefully\\ before beginnning test.
