@@ -82,7 +82,7 @@
     \rule{0pt}{1pt}
   \end{multicols}
 
-\vspace{2mm}
+\vspace{3mm}
 
 \textbf{Directions:}
 Do not turn this page until the person conducting this test gives the signal to
@@ -92,7 +92,7 @@ TO BE SOLVED MENTALLY.\, Make no calculations with paper and pencil.  Write only
 with a (*) require approximate integral answers; any answer to a starred problem
 that is within five percent of the exact answer will be scored correct; all other
 problems require exact answers.
-\vspace{2mm}
+\vspace{3mm}
 
 \textbf{The person conducting this contest should explain these directions to
   the contestants.}
@@ -100,4 +100,5 @@ problems require exact answers.
 \begin{center}
   \textbf{STOP -- WAIT FOR SIGNAL!}
 \end{center}
+\vspace{1mm}
 }
