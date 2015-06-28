@@ -6,8 +6,11 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[]{multicol}
 \RequirePackage{mathptmx}% http://ctan.org/pkg/mathptmx
+\IfFileExists{microtype.sty}{\RequirePackage{microtype}}{}
 \RequirePackage{paralist}
 \RequirePackage{setspace}
+\RequirePackage{etoolbox}
+\RequirePackage{docmute}
 \RequirePackage[absolute]{textpos}
 \setlength{\TPHorizModule}{1in}%
 \setlength{\TPVertModule}{1in}%
