@@ -40,7 +40,7 @@
 \columns{2}
 \keycolumns{4}
 
-\problemspacing{1.5}
+\problemspacing{1.2}
 
 \newenvironment{questions}[0]{%
   \begin{multicols}{\NumSense@Columns}
