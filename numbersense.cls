@@ -17,6 +17,11 @@
 
 \RequirePackage[top=0.6in,bottom=0.8in,left=0.75in,right=0.75in]{geometry}
 
+\RequirePackage{currfile-abspath}
+\getmainfile % get real main file (can be different than jobname in some cases)
+\getabspath{\themainfile}
+\let\mainabspath\theabspath % save result away (macro will be overwritten by the next \getabspath
+
 \setlength\parindent{0cm}
 \setlength\columnsep{25pt}
 
@@ -142,7 +147,7 @@ problems require exact answers.
       Answer Key}
     \raggedcolumns
     \columns{\NumSense@KeyColumns}
-    \input{\jobname.tex}
+    \input{\mainabspath}
   }{%
     % don't make answer key
     \relax
