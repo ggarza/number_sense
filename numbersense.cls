@@ -23,6 +23,7 @@
 \pagestyle{empty}
 
 \newcommand{\bigdot}{~\textbullet~~}
+\newcommand{\ans}{\hrulefill}
 
 \renewcommand{\title}[1]{\gdef\NumSense@Title{#1}}
 \newcommand{\subtitle}[1]{\gdef\NumSense@Subtitle{#1}}
