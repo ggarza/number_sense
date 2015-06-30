@@ -81,6 +81,9 @@
       Score~~~~~~~~Initials~~~~~~\\
     \end{flushright}
   \end{textblock}
+
+  \vspace{1mm}
+
   \begin{flushleft}\bfseries
     Contestant's Number \rule{2cm}{0.5pt}
   \end{flushleft}
