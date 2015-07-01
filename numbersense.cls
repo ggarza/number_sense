@@ -19,8 +19,8 @@
 
 \RequirePackage{currfile-abspath}
 \getmainfile % get real main file (can be different than jobname in some cases)
-\getabspath{\themainfile}
-\let\mainabspath\theabspath % save result away (macro will be overwritten by the next \getabspath
+\filename@parse{\themainfile}
+\gdef\answerkeyfile{\filename@base}
 
 \setlength\parindent{0cm}
 \setlength\columnsep{25pt}
@@ -150,7 +150,7 @@ problems require exact answers.
       Answer Key}
     \raggedcolumns
     \columns{\NumSense@KeyColumns}
-    \input{\mainabspath}
+     \input \answerkeyfile
   }{%
     % don't make answer key
     \relax
