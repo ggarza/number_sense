@@ -59,7 +59,7 @@
 
 \def\q{\@ifnextchar[{\@qwith}{\@qwithout}}
 \def\question{\@ifnextchar[{\@qwith}{\@qwithout}}
-\def\@qwith[#1]#2\par{\item #2 \par }
+\def\@qwith[#1]#2\par{\item #2\par}
 \def\@qwithout#1\par{\item #1}
 
 \def\aq{\@ifnextchar[{\@aqwith}{\@aqwithout}}
@@ -135,8 +135,8 @@ problems require exact answers.
 
     \def\q{\@ifnextchar[{\@qwith}{\@qwithout}}
     \def\question{\@ifnextchar[{\@qwith}{\@qwithout}}
-    \def\@qwith[#1]#2\par{\item #1 \par }
-    \def\@qwithout#1\par{\item }
+    \def\@qwith[#1]#2\par{\item #1\par}
+    \def\@qwithout#1\par{\item \rule{0pt}{1pt}}
 
     \def\aq{\@ifnextchar[{\@aqwith}{\@aqwithout}}
     \def\aquestion{\@ifnextchar[{\@aqwith}{\@aqwithout}}
