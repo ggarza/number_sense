@@ -98,8 +98,6 @@
     \rule{0pt}{1pt}
   \end{multicols}
 
-\vspace{3mm}
-
 \textbf{Directions:}
 Do not turn this page until the person conducting this test gives the signal to
 begin. This is a ten-minute test. There are 80 problems.  Solve accurately and
