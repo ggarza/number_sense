@@ -87,8 +87,8 @@ exam to match those in the answer key.
 
 ## Workflow Tip
 
-One workflow for creating exams with answer keys is to let `\LaTeX` handle the
-column breaks in all rough drafts.  When you're done creating problems and
-answers, take note of where the columns break.  Then use the `\raggedcolumns`
-macro in the preamble of your document, and place a `\columnbreak` macro after
-the questions you believe would be the best place to break the columns. 
+To get the answer key columns to match the exam columns, do not insert any
+`\columnbreak` commands in rough drafts.  When you're done creating problems,
+take note of where the columns break.  Then, place a `\columnbreak` macro after
+the questions where the columns break.
+ 
