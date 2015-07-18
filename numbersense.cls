@@ -121,7 +121,11 @@ problems require exact answers.
 \AtBeginDocument{
   \begin{center}\large\bfseries
   \NumSense@Title\\
-  \NumSense@Subtitle
+  \if \NumSense@Subtitle
+    \relax \relax
+  \else
+    \mbox{\NumSense@Subtitle}\\
+  \fi
 \end{center}
 {\small \NumSense@Instructions}
 }
@@ -144,7 +148,12 @@ problems require exact answers.
     \item[\hspace{-5.6pt}*(\arabic{enumi})]}
 
 
-    {\large \NumSense@Title~---~\NumSense@Subtitle\\
+    {\large \NumSense@Title\\
+        \if \NumSense@Subtitle
+            \relax \relax
+        \else
+          \mbox{\NumSense@Subtitle}\\
+        \fi
       Answer Key}
     \raggedcolumns
     \columns{\NumSense@KeyColumns}
