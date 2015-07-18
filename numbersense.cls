@@ -3,6 +3,8 @@
 \LoadClass[11pt]{article}
 
 
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[]{multicol}
 \RequirePackage{mathptmx}% http://ctan.org/pkg/mathptmx
