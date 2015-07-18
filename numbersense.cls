@@ -15,6 +15,10 @@
 \setlength{\TPHorizModule}{1in}%
 \setlength{\TPVertModule}{1in}%
 
+\RequirePackage{mathtools}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+
 \RequirePackage[top=0.6in,bottom=0.8in,left=0.75in,right=0.75in]{geometry}
 
 \RequirePackage{currfile-abspath}
