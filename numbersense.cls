@@ -3,6 +3,7 @@
 \LoadClass[11pt]{article}
 
 
+\IfFileExists{embedall.sty}{\RequirePackage[source]{embedall}}{}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage[utf8]{inputenc}
