@@ -25,7 +25,7 @@
 \RequirePackage[top=0.6in,bottom=0.8in,left=0.75in,right=0.75in]{geometry}
 
 \RequirePackage{currfile-abspath}
-\getmainfile % get real main file (can be different than jobname in some cases)
+\getmainfile% get real main file (can be different than jobname in some cases)
 \filename@parse{\themainfile}
 \gdef\answerkeyfile{\filename@base}
 
@@ -125,7 +125,7 @@ problems require exact answers.
 }
 
 
-\AtBeginDocument{
+\AtBeginDocument{%
   \begin{center}\large\bfseries
   \NumSense@Title\\
   \if \NumSense@Subtitle
