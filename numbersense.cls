@@ -8,7 +8,8 @@
 \RequirePackage{amssymb}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[]{multicol}
-\RequirePackage{mathptmx}% http://ctan.org/pkg/mathptmx
+\RequirePackage{tgtermes}
+\RequirePackage[T1]{fontenc}
 \IfFileExists{microtype.sty}{\RequirePackage{microtype}}{}
 \RequirePackage{paralist}
 \RequirePackage{setspace}
