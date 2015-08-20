@@ -137,7 +137,7 @@ questions = ""
 for i in range(1, 251):
     question_type = [hundreds_over, hundreds_under, tens_ten, ones_ten,
                      elevens2, double_half, twentyfive]
-    #question_type = [twentyfive]
+    # question_type = [twentyfive]
     questions = questions + choice(question_type)()
 
 worksheet = top_template + questions + bottom_template
