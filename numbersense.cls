@@ -4,6 +4,7 @@
 
 
 \IfFileExists{embedall.sty}{
+  \RequirePackage{embedall}
   \IfFileExists{numbersense.cls}{\embedfile{numbersense.cls}}{}
 }
 {}
