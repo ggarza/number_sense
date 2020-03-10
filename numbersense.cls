@@ -3,11 +3,6 @@
 \LoadClass[11pt]{article}
 
 
-\IfFileExists{embedall.sty}{
-  \RequirePackage{embedall}
-  \IfFileExists{numbersense.cls}{\embedfile{numbersense.cls}}{}
-}
-{}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage[utf8]{inputenc}
