@@ -159,7 +159,7 @@ problems require exact answers.
     \item[\hspace{-5.6pt}*(\arabic{enumi})]}
 
 
-    {\large \NumSense@Title\\
+    {\large \bfseries\NumSense@Title\\
         \if \NumSense@Subtitle
             \relax \relax
         \else
